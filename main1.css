@@ -1,77 +1,100 @@
 .body{
-	max-width: 800px;
+    max-width: 800px;
 }
 .frontPageImg{
-	width: 100%;
-	height: 30%;
-	box-sizing: border-box;
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
 }
 .frontPageImgWidth{
-	width:100%;
+    width:100%;
 }
 .frontPageGallery{
-	margin: 0 auto;
-	width: 100%;
-	text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
 
 .articleFrontPage{
-	display:inline-block;
-	width: 28%;
-	height: 300px;
-	margin: 2%;
-	margin-top: 20px;
-	box-sizing: border-box;
+    display:inline-block;
+    width: 28%;
+    height: 300px;
+    margin: 2%;
+    margin-top: 20px;
+    box-sizing: border-box;
 }
 .articleFrontPageImg{
-	width: 100%;
-	height: 70%
+    width: 100%;
+    height: 70%
 }
 .articleFrontPageH1{
-	clear: right;
-	padding: 1%;
-	text-align: left;	
+    clear: right;
+    padding: 1%;
+    text-align: left;    
 }
 .articleFrontPageP{
-	clear: right;
-	padding: 1%;
-	text-align: left;	
+    clear: right;
+    padding: 1%;
+    text-align: left;    
 }
 .articleFrontPageButton{
-	border-radius: 8px;
-	text-align: center;
-	size: 10px;	
+    border-radius: 8px;
+    text-align: center;
+    size: 10px;    
 }
 .menuGallery{
-	margin: 0 auto;
-	width: 100%;
-	text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
+
 .articleMenu{
-	display:inline-block;
-	width: 150px;
-	height: 150px;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
+    display:inline-block;
+    width: 300px;
+    height: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
 }
 .articleMenuImg{
-	width: 100%;
-	height: 60%;
+    width: 100%;
+    height: 200px;
 }
+
+/*Enlarge image when hover over*/
+.articleMenuImg:hover{
+	position:relative;
+    
+    right:5%;
+    width:120%;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+
 .articleMenuH1{
-	clear: right;
-	padding: 1px;
-	text-align: left;
+    clear: right;
+    padding: 1px;
+    text-align: left;
 }
 .articleMenuP{
-	clear: right;
-	padding: 1px;
-	text-align: left;
+    clear: right;
+    padding: 1px;
+    text-align: left;
 }
 .articleMenuButton{
-	border-radius: 8px;
-	text-align: center;
-	
+    width:100%;
+    border-radius: 4px;
+    text-align: center;
+    color: #0f9b49 ;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid;
+    border-color: #0f9b49 ;
 }   
-     
+.articleMenuButton:hover{
+    color:white;
+    background-color: #0f9b49 ;
+    cursor: pointer;
+}
