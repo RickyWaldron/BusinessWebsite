@@ -125,7 +125,7 @@ h1, p {
     transform: translate3d(50%, 0, 0);
 }
 
-.menu-toggle:checked~.container {
+    .menu-toggle:checked~.container {
     -webkit-transform: translateX(70%);
     transform: translateX(70%);
     -webkit-transform: translate3d(70%, 0, 0);
@@ -177,7 +177,7 @@ h1, p {
 .container {
     position: relative;
     top: 60px;
-    padding: 35px 20px;
+    padding: 0x 20px;
     background-color: #eee;
     -webkit-transition: -webkit-transform 300ms ease;
     transition: -webkit-transform 300ms ease;
@@ -187,13 +187,16 @@ h1, p {
 
 .content {
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 100%;
 }
 
 .footer {
     margin-top: 40px;
     font-size: 0.9em;
     text-align: center;
+    background-color: #0f9b49;
+    height: 45px;
+    color: #eee;
 }
 
 .footer a {
