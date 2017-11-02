@@ -261,3 +261,7 @@ img.logo {
         top: 0;
     }
 }
+
+li a:hover {
+    background-color: #FF4E00;
+}
