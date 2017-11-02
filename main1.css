@@ -49,20 +49,21 @@
 }
 .articleMenu{
 	display:inline-block;
-	width: 150px;
-	height: 150px;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 10px;
+	width: 300px;
+	height: 350px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 40px;
 }
 .articleMenuImg{
 	width: 100%;
-	height: 60%;
+	height: 200px;
 }
 .articleMenuH1{
 	clear: right;
 	padding: 1px;
 	text-align: left;
+	font-size: 20px;
 }
 .articleMenuP{
 	clear: right;
@@ -70,8 +71,19 @@
 	text-align: left;
 }
 .articleMenuButton{
-	border-radius: 8px;
+	width:100%;
+	border-radius: 4px;
 	text-align: center;
-	
+	color: #0f9b49;
+	font-size: 20px;
+	background-color: white;
+	border: 1px solid;
+	border-color: #0f9b49;
 }   
+.articleMenuButton:hover{
+	color:white;
+	background-color: #0f9b49;
+	cursor: pointer;
+}
+
      
