@@ -248,7 +248,7 @@ img.logo {
         padding-top: 0;
         width: 100%;
         height: auto;
-        overflow: auto;
+        overflow: hidden;
     }
     .header li {
         display: inline-block;

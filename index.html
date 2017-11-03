@@ -5,8 +5,10 @@
     <link rel="stylesheet" type="text/css" href="main1.css">
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzeria Jurgen</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <title>Pizzeria Jurgen</title>
+
+
 </head>
 
 <body>
@@ -37,66 +39,120 @@
 
 	<div class="container">
 
-		<section class="content">
+       <!-- subscription "pop-up" -->
 
-			<div class="frontPageImg">
-                <img class = "frontPageImgWidth" src="https://www.papajohns.co.nl/binary_resources/10309237" alt="this is a pizza">
+    <form>
+        <div class="container1">
+
+            <h1>Please subscribe to our newsletter!</h1>
+            <input type="text" placeholder="Enter Email to subscribe" name="email">
+            <div class="clearfix">
+              <button  type="button"  class="cancelbtn">Cancel</button>
+              <button  type="button" class="signupbtn">Sign Up</button>
             </div>
 
-            <div class="frontPageGallery">
-                <!-- Article 1 on the front page -->
-                <article class="articleFrontPage">
+         </div>
+    </form>
 
-                    <img class="articleFrontPageImg" src="https://cdn.modpizza.com/wp-content/uploads/2016/11/mod-pizza-mad-dog-e1479167997381.png">
+  <div class="subscribedText">
+      <h1>Welcome to the Pizza Family! :)</h1>
+      <button type="button" class="closeNewsletter">Close</button>
+  </div>
 
-                    <h1 class="articleFrontPageH1">Lorem Lorem</h1>
+  <div class="notSubscribedText">
+      <h1>Whatever you want silly!</h1>
+      <button type="button" class="closeNewsletter">Close</button>
+  </div>
+  <!-- end subscription "pop-up" -->
 
-                    <p class="articleFrontPageP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    </p>
+  <section class="content">
 
-                    <button class="articleFrontPageButton" type="button">"Click!"</button>
+     <div class="frontPageImg">
+        <img class = "frontPageImgWidth" src="images/frontimage.jpg" alt="this is a pizza">
+    </div>
 
-                </article>
+    <div class="frontPageGallery">
+        <!-- Article 1 on the front page -->
+        <article class="articleFrontPage">
 
-                <!-- Article 2 on the front page -->
-                        <article class="articleFrontPage">
+            <img class="articleFrontPageImg" src="images/maakjouweigenpizza.jpg">
 
-                    <img class="articleFrontPageImg" src="https://cdn.modpizza.com/wp-content/uploads/2016/11/mod-pizza-mad-dog-e1479167997381.png">
+            <h1 class="articleFrontPageH1">Lorem Lorem</h1>
 
-                    <h1 class="articleFrontPageH1">Lorem Lorem</h1>
+            <p class="articleFrontPageP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
 
-                    <p class="articleFrontPageP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    </p>
+            <button class="articleMenuButton" type="button">"Maak jouw eigen Pizza!"</button>
 
-                    <button class="articleFrontPageButton" type="button">"Click!"</button>
+        </article>
 
-                </article>
+        <!-- Article 2 on the front page -->
+        <article class="articleFrontPage">
 
-                <!-- Article 3 on the front page -->
-                        <article class="articleFrontPage">
+            <img class="articleFrontPageImg" src="images/lokaleaanbiedingen.jpg">
 
-                    <img class="articleFrontPageImg" src="https://cdn.modpizza.com/wp-content/uploads/2016/11/mod-pizza-mad-dog-e1479167997381.png">
+            <h1 class="articleFrontPageH1">Lorem Lorem</h1>
 
-                    <h1 class="articleFrontPageH1">Lorem Lorem</h1>
+            <p class="articleFrontPageP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
 
-                    <p class="articleFrontPageP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    </p>
+            <button class="articleMenuButton" type="button">"Mis geen deal!"</button>
 
-                    <button class="articleFrontPageButton" type="button">"Click!"</button>
+        </article>
 
-                </article>
+        <!-- Article 3 on the front page -->
+        <article class="articleFrontPage">
 
-            </div>
+            <img class="articleFrontPageImg" src="images/kombijonswerken.jpg">
+
+            <h1 class="articleFrontPageH1">Lorem Lorem</h1>
+
+            <p class="articleFrontPageP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </p>
+
+            <button class="articleMenuButton" type="button">"Kom bij ons werken!"</button>
+
+        </article>
+        <footer class="footer"></footer>
+    </div>
 
 
 
 
 
-		</section>
+</section>
 
-		<footer class="footer">
-		</footer>
-	</div>
+
+</div>
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(".container1").show(1000);
+})
+
+  $(".signupbtn").click(function(){
+      $(".container1").hide(1000)
+      $(".subscribedText").show(1000)
+      
+  })
+
+  $(".cancelbtn").click(function(){
+      $(".container1").hide(1000)
+      $(".notSubscribedText").show(1000)
+  })
+
+  $(".closeNewsletter").click(function(){
+    $(".subscribedText").hide(1000)
+    $(".notSubscribedText").hide(1000)
+})
+
+</script>
+
+
+
+
+
 </body>
 
 </html>
