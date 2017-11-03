@@ -2,12 +2,17 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="order.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
 	<title>Order</title>
 	<script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 </head>
+<header class="imageheader">
+
+		<a href="index.html"><img src="images/pizza-logo.png" alt="pizza logo" class="logo"></a>
+	</header>
 <body class="bodyOrderPage">
 	<div class="backgroundOrderPage">
 	
@@ -15,10 +20,21 @@
 			<h1 class="orderPageHeader">Vind een Jurgen's Pizza bij jou in de buurt</h1>
 			<p><button class="orderPageButtonDelivery">Delivery</button>
 			<button class="orderPageButtonTakeAway">Take Away</button></p>
-			<p class="lapPostCode"><form><input class="orderPagePostcode" type="text" value ="Vul hier uw postcode in"
-			</form>
-		<button class="orderPageButtonSearch">Search</button><p>
+			<p class="lapPostCode"><form><input class="orderPagePostcodeNummers" type="text" value ="Postal code numbers">
+			<input class="orderPagePostcodeLetters" type="text" value="Letters">	
+			</form></p>
+		<button class="orderPageButtonSearch">Search</button>
 </div>
 </div>
+	<script type="text/javascript">
+	
+		$(".orderPageButtonSearch").click(function(){
+			function orderAlert(){
+				if((".orderPagePostcodeNummers" < 1000) && (".orderPagePostcodeNummers" < 1100)){
+					alert("No delivery in your area")
+				}
+			}
+		});		 
+	</script>
 </body>
 </html>
