@@ -17,7 +17,7 @@
 	<div class="backgroundOrderPage">
 	
 		<div class="orderPageGallery">
-			<h1 class="orderPageHeader">Vind een Jurgen's Pizza bij jou in de buurt</h1>
+			<h1 class="orderPageHeader">Find a Jurgen's Pizza in your neighbourhood!</h1>
 			<p><button class="orderPageButtonDelivery">Delivery</button>
 			<button class="orderPageButtonTakeAway">Take Away</button></p>
 			<p class="lapPostCode"><form><input class="orderPagePostcodeNummers" type="text" value ="Postal code numbers">
@@ -29,12 +29,11 @@
 	<script type="text/javascript">
 	
 		$(".orderPageButtonSearch").click(function(){
-			function orderAlert(){
-				if((".orderPagePostcodeNummers" < 1000) && (".orderPagePostcodeNummers" < 1100)){
+				if((".orderPagePostcodeNummers").value < 1000){ && //(".orderPagePostcodeNummers").value > 1100)){
 					alert("No delivery in your area")
 				}
 			}
-		});		 
+);		 
 	</script>
 </body>
 </html>
