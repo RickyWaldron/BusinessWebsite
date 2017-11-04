@@ -13,141 +13,139 @@
 
 <body>
 
-	<header class="imageheader">
+    <header class="imageheader">
 
-		<a href="index.html"><img src="images/pizza-logo.png" alt="pizza logo" class="logo"></a>
-	</header>
+        <a href="index.html"><img src="images/pizza-logo.png" alt="pizza logo" class="logo"></a>
+    </header>
 
 
-	<input type="checkbox" class="menu-toggle" id="menu-toggle">
-	<div class="mobile-bar">
-		<label for="menu-toggle" class="menu-icon">
+    <input type="checkbox" class="menu-toggle" id="menu-toggle">
+    <div class="mobile-bar">
+        <label for="menu-toggle" class="menu-icon">
 			<span></span>
 		</label>
-		<a href="index.html"><img src="images/pizza-logo.png" alt="pizza logo" width="50px" class="nav-logo"></a>
-	</div>
+        <a href="index.html"><img src="images/pizza-logo.png" alt="pizza logo" width="50px" class="nav-logo"></a>
+    </div>
 
-	<header class="header">
-		<nav>
-			<ul>
-				<li><a href="pizza.html">Pizza</a></li>
-				<li><a href="sides.html">Sides</a></li>
-				<li><a href="drinks.html">Drinks</a></li>
-			</ul>
-		</nav>
-	</header>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="pizza.html">Pizza</a></li>
+                <li><a href="sides.html">Sides</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+            </ul>
+        </nav>
+    </header>
 
-	<div class="container">
+    <div class="container">
 
-       <!-- subscription "pop-up" -->
+        <!-- subscription "pop-up" -->
 
-    <form>
-        <div class="container1">
+        <!-- <form>
+            <div class="container1">
 
-            <h1>Please subscribe to our newsletter!</h1>
-            <input type="text" placeholder="Enter Email to subscribe" name="email">
-            <div class="clearfix">
-              <button  type="button"  class="cancelbtn">Cancel</button>
-              <button  type="button" class="signupbtn">Sign Up</button>
+                <h1>Please subscribe to our newsletter!</h1>
+                <input type="text" placeholder="Enter Email to subscribe" name="email">
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="button" class="signupbtn">Sign Up</button>
+                </div>
+
+            </div>
+        </form>
+
+        <div class="subscribedText">
+            <h1>Welcome to the Pizza Family! :)</h1>
+            <button type="button" class="closeNewsletter">Close</button>
+        </div>
+
+        <div class="notSubscribedText">
+            <h1>Whatever you want silly!</h1>
+            <button type="button" class="closeNewsletter">Close</button>
+        </div> -->
+        <!-- end subscription "pop-up" -->
+
+        <section class="content">
+
+            <div class="frontPageImg">
+                <img class="frontPageImgWidth" src="images/frontimage.jpg" alt="this is a pizza">
             </div>
 
-         </div>
-    </form>
+            <div class="frontPageGallery">
+                <!-- Article 1 on the front page -->
+                <article class="articleFrontPage">
 
-  <div class="subscribedText">
-      <h1>Welcome to the Pizza Family! :)</h1>
-      <button type="button" class="closeNewsletter">Close</button>
-  </div>
+                    <img class="articleFrontPageImg" src="images/maakjouweigenpizza.jpg">
 
-  <div class="notSubscribedText">
-      <h1>Whatever you want silly!</h1>
-      <button type="button" class="closeNewsletter">Close</button>
-  </div>
-  <!-- end subscription "pop-up" -->
+                    <h1 class="articleFrontPageH1">Lorem Lorem</h1>
 
-  <section class="content">
+                    <p class="articleFrontPageP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </p>
 
-     <div class="frontPageImg">
-        <img class = "frontPageImgWidth" src="images/frontimage.jpg" alt="this is a pizza">
+                    <button class="articleMenuButton" type="button">"Maak jouw eigen Pizza!"</button>
+
+                </article>
+
+                <!-- Article 2 on the front page -->
+                <article class="articleFrontPage">
+
+                    <img class="articleFrontPageImg" src="images/lokaleaanbiedingen.jpg">
+
+                    <h1 class="articleFrontPageH1">Lorem Lorem</h1>
+
+                    <p class="articleFrontPageP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </p>
+
+                    <button class="articleMenuButton" type="button">"Mis geen deal!"</button>
+
+                </article>
+
+                <!-- Article 3 on the front page -->
+                <article class="articleFrontPage">
+
+                    <img class="articleFrontPageImg" src="images/kombijonswerken.jpg">
+
+                    <h1 class="articleFrontPageH1">Lorem Lorem</h1>
+
+                    <p class="articleFrontPageP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    </p>
+
+                    <button class="articleMenuButton" type="button">"Kom bij ons werken!"</button>
+
+                </article>
+                <footer class="footer"></footer>
+            </div>
+
+
+
+
+
+        </section>
+
+
     </div>
 
-    <div class="frontPageGallery">
-        <!-- Article 1 on the front page -->
-        <article class="articleFrontPage">
+    <!-- <script type="text/javascript">
+        $(document).ready(function() {
+            $(".container1").show(1000);
+        })
 
-            <img class="articleFrontPageImg" src="images/maakjouweigenpizza.jpg">
+        $(".signupbtn").click(function() {
+            $(".container1").hide(1000)
+            $(".subscribedText").show(1000)
 
-            <h1 class="articleFrontPageH1">Lorem Lorem</h1>
+        })
 
-            <p class="articleFrontPageP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            </p>
+        $(".cancelbtn").click(function() {
+            $(".container1").hide(1000)
+            $(".notSubscribedText").show(1000)
+        })
 
-            <button class="articleMenuButton" type="button">"Maak jouw eigen Pizza!"</button>
-
-        </article>
-
-        <!-- Article 2 on the front page -->
-        <article class="articleFrontPage">
-
-            <img class="articleFrontPageImg" src="images/lokaleaanbiedingen.jpg">
-
-            <h1 class="articleFrontPageH1">Lorem Lorem</h1>
-
-            <p class="articleFrontPageP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            </p>
-
-            <button class="articleMenuButton" type="button">"Mis geen deal!"</button>
-
-        </article>
-
-        <!-- Article 3 on the front page -->
-        <article class="articleFrontPage">
-
-            <img class="articleFrontPageImg" src="images/kombijonswerken.jpg">
-
-            <h1 class="articleFrontPageH1">Lorem Lorem</h1>
-
-            <p class="articleFrontPageP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            </p>
-
-            <button class="articleMenuButton" type="button">"Kom bij ons werken!"</button>
-
-        </article>
-        <footer class="footer"></footer>
-    </div>
-
-
-
-
-
-</section>
-
-
-</div>
-
-<script type="text/javascript">
-
-  $(document).ready(function(){
-    $(".container1").show(1000);
-})
-
-  $(".signupbtn").click(function(){
-      $(".container1").hide(1000)
-      $(".subscribedText").show(1000)
-      
-  })
-
-  $(".cancelbtn").click(function(){
-      $(".container1").hide(1000)
-      $(".notSubscribedText").show(1000)
-  })
-
-  $(".closeNewsletter").click(function(){
-    $(".subscribedText").hide(1000)
-    $(".notSubscribedText").hide(1000)
-})
-
-</script>
+        $(".closeNewsletter").click(function() {
+            $(".subscribedText").hide(1000)
+            $(".notSubscribedText").hide(1000)
+        })
+    </script> -->
 
 
 

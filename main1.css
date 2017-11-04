@@ -1,115 +1,125 @@
-.body{
+.body {
     max-width: 800px;
 }
-.frontPageImg{
+
+.frontPageImg {
     width: 100%;
     height: 50%;
     box-sizing: border-box;
 }
-.frontPageImgWidth{
+
+.frontPageImgWidth {
     width: 100%;
     max-height: auto;
 }
-.frontPageGallery{
+
+.frontPageGallery {
     margin: 0 auto;
     width: 100%;
     text-align: center;
-    float: left;
-
 }
-.articleFrontPage{
-    display:inline-block;
+
+.articleFrontPage {
+    display: inline-block;
     width: 30%;
     min-width: 320px;
     height: auto;
     margin: 1%;
     margin-top: 20px;
     box-sizing: border-box;
-
 }
-.articleFrontPageImg{
+
+.articleFrontPageImg {
     width: 100%;
     height: 70%;
 }
-.articleFrontPageH1{
+
+.articleFrontPageH1 {
     clear: right;
     padding: 1%;
     text-align: left;
 }
-.articleFrontPageP{
+
+.articleFrontPageP {
     clear: right;
     padding: 1%;
     text-align: left;
 }
-.articleFrontPageButton{
+
+.articleFrontPageButton {
     border-radius: 8px;
     text-align: center;
     size: 10px;
 }
-.menuGallery{
+
+.menuGallery {
     margin: 0 auto;
     width: 100%;
     text-align: center;
 }
 
-.articleMenu{
-	display:inline-block;
-	width: 300px;
-	height: 350px;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 40px;
+.articleMenu {
+    display: inline-block;
+    width: 300px;
+    height: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
 }
-.articleMenuImg{
-	width: 100%;
-	height: auto;
+
+.articleMenuImg {
+    width: 100%;
+    height: auto;
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 40px;
 }
+
 /*Enlarge image when hover over*/
-.articleMenuImg:hover{
-	position:relative;
-    -webkit-transform: scale(1.4); 
+
+.articleMenuImg:hover {
+    position: relative;
+    -webkit-transform: scale(1.4);
     -moz-transform: scale(1.4);
     -o-transform: scale(1.4);
     transform: scale(1.4);
 }
-.articleMenuH1{
-	clear: right;
-	padding: 1px;
-	text-align: left;
-	font-size: 20px;
+
+.articleMenuH1 {
+    clear: right;
+    padding: 1px;
+    text-align: left;
+    font-size: 20px;
 }
-.articleMenuP{
+
+.articleMenuP {
     clear: right;
     padding: 1px;
     text-align: left;
 }
-.articleMenuButton{
-	width:100%;
-	border-radius: 4px;
-	text-align: center;
-	color: #0f9b49;
-	font-size: 20px;
-	background-color: white;
-	border: 1px solid;
-	border-color: #0f9b49;
-}
-.articleMenuButton:hover{
-	color: white;
-	background-color: #0f9b49;
-	cursor: pointer;
+
+.articleMenuButton {
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    color: #0f9b49;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid;
+    border-color: #0f9b49;
 }
 
-
-
-
+.articleMenuButton:hover {
+    color: white;
+    background-color: #0f9b49;
+    cursor: pointer;
+}
 
 /*subscribe pop-up*/
 
 /* Full-width input fields */
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -120,6 +130,7 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
+
 .cancelbtn, .signupbtn {
     background-color: #4CAF50;
     color: white;
@@ -133,12 +144,14 @@ input[type=text], input[type=password] {
 }
 
 /* Extra styles for the cancel button */
+
 .cancelbtn {
     padding: 14px 20px;
     background-color: #f44336;
 }
 
 /* Add padding to container1 elements */
+
 .container1 {
     color: red;
     padding: 16px;
@@ -148,22 +161,16 @@ input[type=text], input[type=password] {
     border: 5px #0f9b49 dotted;
     border-radius: 25px;
     text-align: center;
-
     position: absolute;
     z-index: 9999999;
     top: 25%;
-
-
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-   
-
-
-
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
 }
 
 /* Clear floats */
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -171,12 +178,12 @@ input[type=text], input[type=password] {
 }
 
 /* Change styles for cancel button and signup button on extra small screens */
+
 @media screen and (max-width: 300px) {
     .cancelbtn, .signupbtn {
         width: 100%;
     }
 }
-
 
 .subscribedText, .notSubscribedText {
     background-color: #fff;
@@ -186,33 +193,27 @@ input[type=text], input[type=password] {
     padding: 14px 20px;
     text-align: center;
     display: none;
-
-
     position: absolute;
     z-index: 9999999;
     top: 25%;
-
-
     left: 0;
     right: 0;
     transform: translateY(-50%);
-
 }
 
-
-.closeNewsletter:hover{
-    color:white;
-    background-color: #0f9b49 ;
+.closeNewsletter:hover {
+    color: white;
+    background-color: #0f9b49;
     cursor: pointer;
 }
 
-.closeNewsletter{
-    width:100%;
+.closeNewsletter {
+    width: 100%;
     border-radius: 4px;
     text-align: center;
-    color: #0f9b49 ;
+    color: #0f9b49;
     font-size: 20px;
     background-color: white;
     border: 1px solid;
-    border-color: #0f9b49 ;
+    border-color: #0f9b49;
 }
