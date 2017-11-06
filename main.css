@@ -125,7 +125,7 @@ h1, p {
     transform: translate3d(50%, 0, 0);
 }
 
-    .menu-toggle:checked~.container {
+.menu-toggle:checked~.container {
     -webkit-transform: translateX(70%);
     transform: translateX(70%);
     -webkit-transform: translate3d(70%, 0, 0);
@@ -214,7 +214,6 @@ header img {
 img.logo {
     max-width: 50%;
     max-height: 50%;
-    display: block;
     margin: 0 auto;
 }
 
@@ -222,6 +221,10 @@ img.logo {
     header.imageheader {
         display: none;
     }
+}
+
+.imageheader {
+    text-align: center;
 }
 
 @media (min-width: 720px) {
@@ -240,7 +243,6 @@ img.logo {
     .mobile-bar {
         display: none;
     }
-
     .header {
         z-index: 5;
         position: relative;
