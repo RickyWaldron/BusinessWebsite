@@ -214,7 +214,6 @@ header img {
 img.logo {
     max-width: 50%;
     max-height: 50%;
-    display: block;
     margin: 0 auto;
 }
 
@@ -222,6 +221,10 @@ img.logo {
     header.imageheader {
         display: none;
     }
+}
+
+.imageheader {
+    text-align: center;
 }
 
 @media (min-width: 720px) {

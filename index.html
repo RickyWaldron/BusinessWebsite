@@ -6,38 +6,33 @@
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   
     <title>Pizzeria Jurgen</title>
-
-
 </head>
 
 <body>
 
-    <header class="imageheader">
-
-        <a href="index.html"><img src="images/pizza-logo.png" alt="pizza logo" class="logo"></a>
-    </header>
-
-
-    <input type="checkbox" class="menu-toggle" id="menu-toggle">
-    <div class="mobile-bar">
-        <label for="menu-toggle" class="menu-icon">
+	<header class="imageheader">
+		<a href="index.html"><img src="images/pizza-logo.png" alt="pizza logo" class="logo"></a>
+	</header>
+	<input type="checkbox" class="menu-toggle" id="menu-toggle">
+	<div class="mobile-bar">
+		<label for="menu-toggle" class="menu-icon">
 			<span></span>
 		</label>
-        <a href="index.html"><img src="images/pizza-logo.png" alt="pizza logo" width="50px" class="nav-logo"></a>
-    </div>
+		<a href="index.html"><img src="images/pizza-logo.png" alt="pizza logo" width="50px" class="nav-logo"></a>
+	</div>
+	<header class="header">
+		<nav>
+			<ul>
+				<li><a href="pizza.html">Pizza</a></li>
+				<li><a href="sides.html">Sides</a></li>
+				<li><a href="drinks.html">Drinks</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <header class="header">
-        <nav>
-            <ul>
-                <li><a href="pizza.html">Pizza</a></li>
-                <li><a href="sides.html">Sides</a></li>
-                <li><a href="drinks.html">Drinks</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="container">
+	<div class="container">
 
         <!-- subscription "pop-up" -->
 
@@ -125,30 +120,9 @@
 
     </div>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".container1").show(1000);
-        })
-
-        $(".signupbtn").click(function() {
-            $(".container1").hide(1000)
-            $(".subscribedText").show(1000)
-
-        })
-
-        $(".cancelbtn").click(function() {
-            $(".container1").hide(1000)
-            $(".notSubscribedText").show(1000)
-        })
-
-        $(".closeNewsletter").click(function() {
-            $(".subscribedText").hide(1000)
-            $(".notSubscribedText").hide(1000)
-        })
-    </script>
 
 
-
+ <script src="script.js"></script>
 
 
 </body>
